@@ -2,16 +2,16 @@
     <content><![CDATA[
 /*
 Theme Name: ${1:Theme Name}
-Theme URI: ${2:Theme URI}
-Description: Designed by ${3:Team Name}
-Version: ${4:1.0}
-Author: ${3:Team Name}
-Author URI: ${5:Team URL}
+Theme URI: ${2:http://venncreative.co.uk}
+Description: Designed by ${3:Venn Creative}
+Version: 1.0
+Author: ${3:Venn Creative}
+Author URI: ${4:http://venncreative.co.uk}
 License: GPL
 */
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>wp-style</tabTrigger>
+    <tabTrigger>wp-theme-css</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.css</scope> -->
 </snippet>
