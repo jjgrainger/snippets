@@ -2,16 +2,17 @@
     <content><![CDATA[
 (function(\$, window, undefined) \{
 
-    // Plugin is the plugins name, opts are options
+    // Plugin is the plugins name
+    // opts are the user supplied options
     \$.fn.${1:Plugin} = function(opts) \{
 
-        var defaults = \{
-            // setting your default values for options
-        \};
-        // extend the options from defaults with user's options
+        // default plugin settings
+        var defaults = \{\};
+
+        // create options using the defaults and user supplied
         var options = \$.extend(defaults, opts || \{\});
 
-        return this.each(function() \{ // jQuery chainability
+        return this.each(function() \{
             // do plugin stuff
         \});
 
@@ -19,7 +20,7 @@
 \})(jQuery, window);
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>js-plugin</tabTrigger>
+    <tabTrigger>jq-plugin</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <!-- <scope>source.javascript</scope> -->
+    <scope>source.js</scope>
 </snippet>

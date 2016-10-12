@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-if(have_posts()) : while(have_posts()) : the_post();
+<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>wp-loop-start</tabTrigger>

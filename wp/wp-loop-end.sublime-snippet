@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-endwhile; else : get_404_template(); endif;
+<?php endwhile; else : get_404_template(); endif; ?>
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>wp-loop-end</tabTrigger>

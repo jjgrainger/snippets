@@ -1,13 +1,11 @@
 <snippet>
     <content><![CDATA[
-\$("${1:element}").hover(function() \{
-    $2
-\}, function() \{
-    $3
+\$(document).ready(function() \{
+    $0
 \});
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>js-hover</tabTrigger>
+    <tabTrigger>jq-ready</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <!-- <scope>source.python</scope> -->
+    <!-- <scope>source.javascript</scope> -->
 </snippet>

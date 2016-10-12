@@ -1,13 +1,13 @@
 <snippet>
     <content><![CDATA[
-<?php if(get_field('standfirst')) : ?>
-    <${1:p} class="standfirst">
-        <?php the_field('standfirst'); ?>
-    </${1:p}>
+<?php if(\$${1:posts} = get_field('${2:relationship_field}')) : ?>
+    <?php foreach(\$${1:posts} as \$post) : setup_postdata(\$post); ?>
+        ${3}
+    <?php endforeach; wp_reset_postdata(); ?>
 <?php endif; ?>
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>acf-standfirst</tabTrigger>
+    <tabTrigger>acf-relationship</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>text.html - source.php</scope> -->
     <!-- <scope>text.html.basic</scope> -->

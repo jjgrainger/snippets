@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-the_time(get_option('date_format'));
+<?php the_time(get_option('date_format')); ?>
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>wp-date</tabTrigger>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-bloginfo('${1:template_directory}');
+<?php bloginfo('${1:template_directory}'); ?>
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>wp-bloginfo</tabTrigger>

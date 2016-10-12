@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+<?php if(have_rows('${1:flexible_field}')) : ?>
+    <?php while(have_rows('${1:flexible_field}')) : the_row(): ?>
+        <?php get_template_part('layouts/' . get_row_layout()); ?>
+    <?php endwhile; ?>
+<?php endif; ?>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>acf-flexible</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>text.html - source.php</scope> -->
+    <!-- <scope>text.html.basic - source</scope> -->
+    <scope>embedding.php, text.html</scope>
+    <!-- <scope>text.php</scope> -->
+</snippet>

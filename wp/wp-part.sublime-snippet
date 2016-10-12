@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-get_template_part('${1:parts/post}');
+<?php get_template_part('${1:parts/post}'); ?>
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>wp-part</tabTrigger>

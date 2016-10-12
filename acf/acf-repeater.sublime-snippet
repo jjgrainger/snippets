@@ -1,13 +1,13 @@
 <snippet>
     <content><![CDATA[
-<?php if(get_field('standfirst')) : ?>
-    <${1:p} class="standfirst">
-        <?php the_field('standfirst'); ?>
-    </${1:p}>
+<?php if(have_rows('${1:repeater_field}')) : ?>
+    <?php while(have_rows('${1:repeater_field}')) : the_row(): ?>
+        ${2}
+    <?php endwhile; ?>
 <?php endif; ?>
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>acf-standfirst</tabTrigger>
+    <tabTrigger>acf-repeater</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>text.html - source.php</scope> -->
     <!-- <scope>text.html.basic</scope> -->
